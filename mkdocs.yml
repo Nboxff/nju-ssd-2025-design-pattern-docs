@@ -1,0 +1,37 @@
+site_name: NJU 软件系统设计（2025）-设计模式
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - toc.integrate
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - 课程说明: index.md
+  - 实验迭代一:
+    - 任务说明: lab1/description.md
+    - 团队填报与OJ使用方法: lab1/oj.md
+  - 实验迭代二:
+    - 任务说明: lab2/description.md
+  - 实验迭代三:
+    - 任务说明: lab3/description.md
+  - 常见问题答疑:
+    - 迭代一: faq/lab1.md
+    - 迭代二: faq/lab2.md
+    - 迭代三: faq/lab3.md
+    - 问卷建议回复: faq/feedback.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details  # 增强型提示框需要
+  - attr_list # images
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
